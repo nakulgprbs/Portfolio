@@ -565,6 +565,10 @@ header .scroll-bar {
   .contact .row .image {
     display: none;
   }
+  .contact .image img {
+    width: 90%; /* Adjust the image width for mobile */
+    padding-bottom: 0;
+  }
 }
 
 @media (max-width: 450px) {
