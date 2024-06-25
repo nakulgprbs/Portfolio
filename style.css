@@ -118,6 +118,9 @@ header .scroll-bar {
   background: url(../images/home-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
+  padding-top: 0%;
+  margin-top: 0%;
+  margin-bottom: 20px;
 }
 
 .home .content {
@@ -145,7 +148,7 @@ header .scroll-bar {
 .home .content p {
   max-width: 50rem;
   font-size: 1.5rem;
-  color: #666;
+  color: #130c0c;
   padding-bottom: 1rem;
 }
 
@@ -240,6 +243,7 @@ header .scroll-bar {
   color: #999;
   font-size: 1.7rem;
 }
+/*
 
 .about .counter {
   display: flex;
@@ -312,7 +316,7 @@ header .scroll-bar {
   color: #666;
   padding: 1rem 0;
 }
-
+*/
 .education .row {
   display: flex;
   flex-wrap: wrap;
@@ -422,7 +426,12 @@ header .scroll-bar {
 .portfolio .box-container .box:hover img {
   transform: scale(1.2);
 }
-
+.contact{
+  padding: 0%;
+  margin-bottom: 0%;
+  height: 4%;
+}
+/*
 .contact .row {
   display: flex;
   border-radius: 0.5rem;
@@ -489,7 +498,7 @@ header .scroll-bar {
   background: #2200ff;
   cursor: pointer;
 }
-
+*/
 .footer {
   background: #f9f9f9;
   color: #333;
