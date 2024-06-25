@@ -8,7 +8,7 @@ body {
 nav {
   background-color: #333;
   color: white;
-  padding: 1em;
+  padding: 1em; 
   text-align: center;
 }
 
@@ -17,7 +17,8 @@ nav ul {
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: center;
+  justify-content:left;
+ 
 }
 
 nav li {
@@ -34,18 +35,22 @@ main {
 }
 
 .photo-section {
+  height: 50%;
   display: flex;
   align-items: center;
-  margin-bottom: 2em;
+  margin-bottom: 1em; 
+  background-color: #f7f1f3;
 }
 
 .photo-section img {
   max-width: 50%;
   margin-right: 2em;
+  
 }
 
 .photo-section.reverse {
   flex-direction: row-reverse;
+  background-color: rgb(176, 172, 178);
 }
 
 .photo-section.reverse img {
@@ -65,4 +70,46 @@ footer {
   position: fixed;
   width: 100%;
   bottom: 0;
+}
+
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .photo-section {
+      flex-direction: row;
+  }
+
+  .photo-section img {
+      max-width: 50%;
+      margin-bottom: 0;
+      margin-right: 2em;
+  }
+
+  .photo-section.reverse {
+      flex-direction: row-reverse;
+  }
+
+  .photo-section.reverse img {
+      margin-left: 2em;
+      margin-right: 0;
+  }
+
+  .description {
+      max-width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  nav ul {
+      flex-direction: column;
+  }
+
+  nav li {
+      margin: 0.5em 0;
+  }
+
+  footer {
+      position: static;
+      padding: 1em;
+  }
 }
